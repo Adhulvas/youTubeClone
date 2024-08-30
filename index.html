@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAwklEQVR4AWNwL/ChKx6GFo5a+J+BQRmIfYE4HYgrgLgLiOdA8VqsGCHfBdWTDjVDGaeFQElmIL4CxP+pjK/gsnA7SAGN8FpsFv6nJUaxECggSmsLQXYgW2hOlKbs7P//7ezItVAf2UJfojTNnv0fDNauJcdCX2QLo0iwEAHa2si2MJ1ECxHg1StIUBPWH0V3C+kepOQnmi1byE809M8W9M/49C/a6F940796wqyAo/BUvtuRMZ5KOApk1mibhmI8aiEAWJrZd6IgmiUAAAAASUVORK5CYII=">
+
+    <link rel="stylesheet" href="/general.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/video.css">
+    <link rel="stylesheet" href="/sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="/icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="/icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="/icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="/icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="/icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="/icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="/icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="/channel-pictures/unnamed.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="/icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=4NRXx6U8ABQ">
+              <img class="thumbnail" src="/thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="video-time">4:23</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-1.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ">
+                The Weeknd - Blinding Lights (Official Video)</a> 
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ">
+                The Weeknd</a>
+              </p>
+              <p class="video-stats">
+                802M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=gape0TpU3I4">
+              <img class="thumbnail" src="/thumbnails/thumbnail-2.webp">
+            </a>
+            <div class="video-time">16:42</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-2.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=gape0TpU3I4">
+                Intel Core Ultra Explained</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@LinusTechTips">
+                Linus Tech Tips</a>
+              </p>
+              <p class="video-stats">
+                923K views &#183; 3 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=InpxvHF_FO0">
+              <img class="thumbnail" src="/thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">4:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-3.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=InpxvHF_FO0">
+                MASHUP MADNESS Event is Live! Clash of Clans Clash-O-Ween Update</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@ClashOfClans">
+                Clash of Clans</a>
+              </p>
+              <p class="video-stats">
+                7.7M views &#183; 4 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=qqrpMRDuPfc">
+              <img class="thumbnail" src="/thumbnails/thumbnail-4.webp">
+            </a>
+            <div class="video-time">3:04</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-4.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=qqrpMRDuPfc">
+                Godzilla x Kong: The New Empire | Official Trailer 2</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@WarnerBrosPictures">
+                Warner Bros. Pictures</a>
+              </p>
+              <p class="video-stats">
+                26M views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=QrbQpOTdTfM&t=17s">
+              <img class="thumbnail" src="/thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="video-time">4:47</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-5.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=QrbQpOTdTfM&t=17s">
+                Abraham Ozler | My Opinion | Jayaram | Malayalam</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@lifeofshazzam3012">
+                LifeofShazzam</a>
+              </p>
+              <p class="video-stats">
+                680K views &#183; 1 month ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=iM150ZWovZM">
+              <img class="thumbnail" src="/thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="video-time">3:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-6.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=iM150ZWovZM">
+                Damsel | Official Trailer | Netflix</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@Netflix">
+                Netflix</a>
+              </p>
+              <p class="video-stats">
+                7.1M views &#183; 3 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=zWJmYXsYj4A">
+              <img class="thumbnail" src="/thumbnails/thumbnail-7.webp">
+            </a>
+            <div class="video-time">10:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-7.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=zWJmYXsYj4A">
+                EAGLE GAMING ROOMTOUR - COMPLETED MY DREAM SPACE</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@eaglegamingop">
+                Eagle Gaming</a>
+              </p>
+              <p class="video-stats">
+                282K views &#183; 3 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=F9U-yoJbgWs">
+              <img class="thumbnail" src="/thumbnails/thumbnail-8.webp">
+            </a>
+            <div class="video-time">1:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-8.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=F9U-yoJbgWs">
+                The Boys – Season 4 Official Teaser Trailer | Prime Video</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@PrimeVideo">
+                Prime Video</a>
+              </p>
+              <p class="video-stats">
+                12M views &#183; 3 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc&t=25s">
+              <img class="thumbnail" src="/thumbnails/thumbnail-9.webp">
+            </a>
+            <div class="video-time">13:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-9.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=ixmxOlcrlUc&t=25s">
+                The SECRET to Super Human STRENGTH</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@OFFICIALTHENXSTUDIOS">
+                ThenX</a>
+              </p>
+              <p class="video-stats">
+                23M views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o&t=25s">
+              <img class="thumbnail" src="/thumbnails/thumbnail-10.webp">
+            </a>
+            <div class="video-time">7:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-10.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=R2vXbFp5C9o&t=25s">
+                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@BusinessInsider">
+                Business Insider</a>
+              </p>
+              <p class="video-stats">
+                20M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=uJMCNJP2ipI&t=1s">
+              <img class="thumbnail" src="/thumbnails/thumbnail-11.webp">
+            </a>
+            <div class="video-time">2:26</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-11.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=uJMCNJP2ipI&t=1s">
+                Deadpool & Wolverine | Official Teaser | In Theaters July 26</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@marvel">
+                Marvel Entertainment</a>
+              </p>
+              <p class="video-stats">
+                25M views &#183; 3 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs&t=25s">
+              <img class="thumbnail" src="/thumbnails/thumbnail-12.webp">
+            </a>
+            <div class="video-time">4:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/channel-pictures/channel-12.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title"><a class="video-link" href="https://www.youtube.com/watch?v=9iMGFqMmUFs&t=25s">
+                What would happen if you didn't drink water? - Mia Nacamulli</a>
+              </p>
+              <p class="video-author"><a class="video-author-link" href="https://www.youtube.com/@TEDEd">
+                TED-Ed</a>
+              </p>
+              <p class="video-stats">
+                12M views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
